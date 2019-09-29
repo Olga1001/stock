@@ -1,0 +1,717 @@
+@import "fonts"
+@import "vars"
+
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #79796a
+  font-family: "OpenSans-Regular", sans-serif
+  font-size: 21px
+  font-weight: 400
+  line-height: 64px
+
+*:-moz-placeholder
+  color: #79796a
+  font-family: "OpenSans-Regular", sans-serif
+  font-size: 21px
+  font-weight: 400
+  line-height: 64px
+
+*::-moz-placeholder
+  color: #79796a
+  font-family: "OpenSans-Regular", sans-serif
+  font-size: 21px
+  font-weight: 400
+  line-height: 64px
+
+*:-ms-input-placeholder
+  color: #79796a
+  font-family: "OpenSans-Regular", sans-serif
+  font-size: 21px
+  font-weight: 400
+  line-height: 64px
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: transparent
+
+body input:required:valid,
+body textarea:required:valid
+  color: #505050
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+a
+  outline: none
+  text-decoration: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  position: relative
+  line-height: normal
+
+img
+  display: block
+  width: 100%
+  height: 100%
+  object-fit: contain
+
+.container
+  max-width: 1192px
+  padding: 0 10px
+  width: 100%
+  margin: 0 auto
+
+input, textarea
+  border: none
+  font-size: 16px
+  outline: none
+  color: #505050
+
+button
+  cursor: pointer
+  outline: none
+  border: none
+
+.home-bold
+  color: #565656
+  font-family: "CityFlowersscriptone", sans-serif
+  font-size: 60px
+  font-weight: 400
+  line-height: 70px
+  letter-spacing: 0.95px
+.home-regular
+  font-family: "OpenSans-Regular", sans-serif
+  font-size: 36px
+  font-weight: 400
+  line-height: 1
+  text-transform: uppercase
+  letter-spacing: 7.19px
+.btn
+  background-color: #f24c78
+  line-height: 85px
+  color: #ffffff
+  font-family: "OpenSans-Regular", sans-serif
+  font-size: 30px
+  font-weight: 400
+  text-transform: uppercase
+  letter-spacing: -0.38px
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 10px
+  padding: 0 50px
+  margin: 50px auto 0
+.first
+  background: url("../img/image_1.jpg") no-repeat center top/ cover
+  height: 100vh
+  min-height: 600px
+  &-container
+    max-width: 1920px
+    width: 100%
+    height: 100%
+    margin: 0 auto
+    display: flex
+    align-items: center
+  &-left
+    text-align: center
+    padding: 82px 0 0 5.1vw
+  .home-regular
+    margin: 30px 0 3px
+  &-icon
+    width: 41px
+    height: 41px
+    position: relative
+    margin-right: 15px
+    &-star
+      position: absolute
+      top: -43px
+      right: -46px
+      z-index: 1
+      width: 99px
+      height: 103px
+.second
+  background: url("../img/image_3.jpg") no-repeat center/ cover
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 165px 15px 85px
+  &-bold
+    font-size: 48px
+    letter-spacing: 1.42px
+    line-height: 1
+  &-left
+    text-align: center
+    max-width: 795px
+    &-img
+      height: 231px
+      margin-top: 10px
+    &-top
+      margin-bottom: 115px
+      .home-regular
+        font-size: 30px
+    &-down
+      .home-regular
+          font-size: 25px
+  &-text
+    color: #565656
+    font-family: "OpenSans-Regular", sans-serif
+    font-size: 17px
+    font-weight: 700
+    font-style: italic
+    line-height: 19.17px
+    text-transform: uppercase
+    text-align: right
+    padding-top: 30px
+    padding-right: 15px
+  &-right
+    display: flex
+    align-items: center
+    &-col
+      padding-top: 50px
+    &-gift
+      margin-bottom: 18px
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        right: 100%
+        top: 65px
+        background: url("../img/dashed-1.png") no-repeat left center / cover
+        width: 165px
+        height: 99px
+    &-row
+      display: flex
+      justify-content: flex-end
+      margin-bottom: 30px
+      position: relative
+      &:first-child
+        &:before
+          content: ''
+          position: absolute
+          right: 115px
+          bottom: 0
+          background: url("../img/dashed-2.png") no-repeat right center / cover
+          width: 270px
+          height: 52px
+        .second-right-linen:before
+          left: -40px
+          bottom: 15px
+
+      &:nth-child(2)
+        &:before
+          content: ''
+          position: absolute
+          right: 140px
+          bottom: 30px
+          background: url("../img/dashed-3.png") no-repeat right center / cover
+          width: 239px
+          height: 52px
+        .second-right-linen:before
+          left: -35px
+          bottom: 4px
+      &:last-child
+        &:before
+          content: ''
+          position: absolute
+          right: 113px
+          bottom: 20px
+          background: url("../img/dashed-4.png") no-repeat right center / cover
+          width: 339px
+          height: 66px
+        .second-right-linen:before
+          left: -44px
+          bottom: 49px
+    &-img
+      height: 470px
+      width: 380px
+    &-linen
+      width: 143px
+      height: 143px
+      border-radius: 50%
+      border: 1px dashed #c6c6c6
+      position: relative
+      img
+        border-radius: 50%
+        object-fit: cover
+      &:before
+        content: ''
+        position: absolute
+        background: url("../img/blick.png") no-repeat center / contain
+        width: 89px
+        height: 67px
+.third
+  background: url("../img/image_2.jpg") no-repeat center/ cover
+  height: 705px
+  width: 100%
+  display: flex
+  justify-content: flex-end
+  align-items: center
+  &-link
+    color: #565656
+    font-family: "CityFlowersscriptone", sans-serif
+    font-size: 48px
+    font-weight: 400
+    line-height: 44px
+    letter-spacing: 0.76px
+    text-align: center
+    width: 60%
+.fourth
+  padding: 120px 15px 8px 15px
+  background: url("../img/image_4.jpg") no-repeat center/ cover
+  font-family: "CityFlowersscriptone", sans-serif
+  &-col
+    width: 100%
+  &-title
+    text-align: center
+    letter-spacing: -0.76px
+    line-height: 1
+    font-weight: 400
+    margin-bottom: 16px
+  &-row
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    max-width: 1300px
+    margin: 0 auto
+    padding-bottom: 97px
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      right: 290px
+      top: 50px
+      background: url("../img/dashed.png") no-repeat center / 100%
+      max-width: 615px
+      width: 100%
+      max-height: 129px
+      height: 100%
+  &-flex
+    display: flex
+    align-items: center
+    padding-bottom: 10px
+    width: calc(100% - 375px)
+  &-place
+    opacity: 0.55
+    color: #565656
+    font-size: 230px
+    font-weight: 400
+    line-height: 28px
+    text-transform: uppercase
+    letter-spacing: -4.6px
+    max-width: 120px
+    width: 100%
+    margin-right: 20px
+    display: flex
+    justify-content: flex-end
+  &-name
+    color: #565656
+    font-size: 60px
+    font-weight: 400
+    line-height: 1
+    margin-bottom: 9px
+    letter-spacing: -0.76px
+  &-span
+    color: #565656
+    font-family: "OpenSans-Regular", sans-serif
+    margin-top: 10px
+    font-size: 16px
+    font-weight: 400
+    line-height: 19.09px
+    min-height: 17px
+  &-text
+    color: #565656
+    font-family: "OpenSans-Regular", sans-serif
+    font-size: 30px
+    font-weight: 400
+    line-height: 36px
+  &-bold
+    font-weight: 700
+
+  &-block
+    width: 302px
+    height: 302px
+    border: 3px dashed #bababa
+    border-radius: 50%
+    padding: 10px
+
+    &-pink
+      width: 100%
+      height: 100%
+      background: #f9e4e9
+      border-radius: 50%
+      display: flex
+      justify-content: center
+  &-img
+    &-one
+      width: 183px
+    &-two
+      width: 153px
+    &-tree
+      width: 152px
+
+.fifth
+  background: url("../img/image_5.jpg") no-repeat center / contain
+  width: 100%
+  display: flex
+  justify-content: space-between
+  align-items: center
+  position: relative
+  height: 33.07vw
+  padding: 0 15px
+  overflow: hidden
+  &-img
+    width: 25.26vw
+    position: absolute
+    left: 72%
+    bottom: 0
+    max-height: 38.02vw
+    padding-top: 4.3vw
+  &-mid
+    text-align: center
+    width: 100%
+    z-index: 5
+  &-title
+    color: #5f5f5f
+    font-family: "CityFlowersscriptone", sans-serif
+    font-size: 55px
+    font-weight: 400
+    line-height: 1
+    letter-spacing: -0.68px
+    margin-bottom: 28px
+  &-text
+    color: #565656
+    font-family: "OpenSans-Regular", sans-serif
+    font-size: 30px
+    font-weight: 400
+    line-height: 36px
+    text-transform: uppercase
+  &-span
+    font-size: 24px
+  &-bold
+    font-weight: 700
+.sixth
+  padding: 140px 15px
+  &-title
+    color: #5f5f5f
+    font-family: "CityFlowersscriptone", sans-serif
+    font-size: 48px
+    font-weight: 400
+    line-height: 1
+    letter-spacing: -0.59px
+    text-align: center
+  &-flex
+    display: flex
+    flex-wrap: wrap
+    max-width: 1175px
+    width: 100%
+    margin: 128px auto 0
+  &-item
+    width: calc(33.33% - 20px)
+    margin-right: 20px
+    border-radius: 3px
+    border: 1px solid #e4e7ed
+    background-color: #ffffff
+    position: relative
+    &:nth-child(3n+3)
+      margin-right: 0
+  &-img
+    width: 100%
+    max-height: 358px
+    object-fit: cover
+  &-content
+    padding: 50px 25px 100px 25px
+  &-name
+    margin-bottom: 34px
+    color: #31404b
+    font-family: "OpenSans-Regular", sans-serif
+    font-size: 23px
+    font-weight: 700
+    line-height: 26.33px
+    text-transform: uppercase
+    letter-spacing: 0.91px
+  &-text
+    color: #5c5c5c
+    font-family: "OpenSans-Regular", sans-serif
+    font-size: 14px
+    font-weight: 400
+    line-height: 18px
+    letter-spacing: 0.55px
+
+  &-link
+    border-radius: 0 0 3px 3px
+    border: 1px solid #e4e7ed
+    background-color: #f24d79
+    padding: 21px
+    margin: 0
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 100%
+    &-icon
+      width: 31px
+  &-btn
+    margin-top: 130px
+.popup
+  position: fixed
+  top: 0
+  left: 0
+  overflow-y: auto
+  height: 100%
+  width: 100%
+  display: flex
+  align-items: center
+  flex-direction: column
+  justify-content: center
+  padding: 20px 15px
+  opacity: 0
+  pointer-events: none
+  z-index: 9
+  transition: all 0.3s ease
+  &-item
+    box-shadow: 2px -8px 52px 2px rgba(36, 36, 36, 0.2)
+    border-radius: 20px
+    background-color: #fafbfc
+    padding: 0 15px
+    z-index: 9
+    margin: 20px 0
+
+  &.active
+    opacity: 1
+    pointer-events: auto
+  &-btn
+    &-load
+      width: calc(50% + 20px)
+      margin: 0 40px 0 0
+      line-height: 64px
+      font-size: 21px
+      font-weight: 700
+  &-load
+    margin: 20px 0 35px
+  &-text
+    color: #5f5f5f
+    font-family: "OpenSans-Regular", sans-serif
+    font-size: 21px
+    font-weight: 400
+    line-height: 30px
+  &-textarea
+    height: 160px
+    overflow-y: auto
+    resize: none
+    width: 100%
+    border-radius: 15px
+    margin-bottom: 27px
+    background: #ffffff
+    padding: 25px
+    color: #79796a
+    font-family: "OpenSans-Regular", sans-serif
+    font-size: 21px
+    font-weight: 400
+    &::-webkit-input-placeholder
+      line-height: 1
+    &:-moz-placeholder
+      line-height: 1
+    &::-moz-placeholder
+      line-height: 1
+    &:-ms-input-placeholder
+      line-height: 1
+  &-half
+    width: 50%
+  &-name
+    color: #666666
+    font-family: "OpenSans-Regular", sans-serif
+    font-size: 21px
+    font-weight: 700
+    line-height: 1
+    margin-bottom: 17px
+  &-filed
+    width: calc(50% - 20px)
+    margin-right: 40px
+    margin-bottom: 27px
+    &:nth-child(2n+2)
+      margin-right: 0
+  &-input
+    border-radius: 15px
+    background: #ffffff
+    color: #79796a
+    font-family: "OpenSans-Regular", sans-serif
+    font-size: 21px
+    font-weight: 400
+    line-height: 64px
+    padding: 0 25px
+    width: 100%
+  &-flex
+    display: flex
+  &-close
+    position: absolute
+    right: 70px
+    top: 70px
+    width: 66px
+    height: 66px
+    cursor: pointer
+    background-color: #ffffff
+    border-radius: 50%
+    &:before, &:after
+      content: ''
+      position: absolute
+      left: 50%
+      top: 50%
+      background-image: linear-gradient(25.3deg, #fd6f95 0%, #e3184e 100%)
+      height: 1px
+      width: 50%
+      transform: translate(-50%, -50%) rotate(45deg)
+    &:after
+      height: 50%
+      width: 1px
+  &-request
+    transition: 0.3s ease
+    form
+      max-width: 1181px
+      width: 100%
+      padding: 45px 15px 55px
+      position: relative
+    &.active
+      opacity: 1
+      pointer-events: auto
+    &-close
+      width: 34px
+      height: 34px
+      top: 40px
+      right: 47px
+    &-conteiner
+      max-width: 800px
+      width: 100%
+      margin: 0 auto
+  &-title
+    color: #5f5f5f
+    font-family: "CityFlowersscriptone", sans-serif
+    font-size: 42px
+    font-weight: 400
+    line-height: 1
+    text-align: center
+    margin-bottom: 45px
+    &-center
+      text-align: center
+      text-transform: uppercase
+      margin: 1.5em 0
+  &-bold
+    color: #5f5f5f
+    font-family: "OpenSans-Regular", sans-serif
+    font-size: 21px
+    font-weight: 700
+    line-height: 33.33px
+    text-align: center
+  &-label
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+    margin-bottom: 10px
+
+  &-check
+    width: 33px
+    height: 32px
+    box-shadow: inset 0 0 4px 2px rgba(0, 0, 0, 0.2)
+    background-color: #f6f8f9
+    position: relative
+    border-radius: 50%
+    display: block
+    margin-right: 15px
+    &:before
+      content: ''
+      position: absolute
+      left: 50%
+      top: 50%
+      border-radius: 50%
+      transform: translate(-50%, -50%)
+      width: 18px
+      height: 18px
+      background: transparent
+  &-requlations
+
+    opacity: 0
+    pointer-events: none
+    transition: all 0.3s ease
+    form
+      position: relative
+      max-width: 1388px
+      width: 100%
+      margin: 0 auto
+      padding: 100px 15px 60px
+    &.active
+      opacity: 1
+      pointer-events: auto
+    &-conteiner
+      max-width: 1075px
+      width: 100%
+      margin: 0 auto 48px
+      max-height: 892px
+      overflow-y: auto
+      &::-webkit-scrollbar
+        width: 11px
+        background: #fd7b9e
+        border-radius: 5px
+      &::-webkit-scrollbar-thumb
+
+        box-shadow: 1px -5px 7px 1px rgba(36, 36, 36, 0.2)
+        border-radius: 5px
+        background-color: #ffffff
+    &-title
+      font-family: "OpenSans-SemiBold", sans-serif
+      font-weight: 600
+      text-transform: uppercase
+      color: #565656
+      font-size: 21px
+      line-height: 33.33px
+    .popup-text
+      line-height: 33.33px
+    .popup-title
+      margin-bottom: 75px
+    &-bold
+      font-weight: 700
+.btn-submit
+  line-height: 64px
+  font-size: 21px
+  font-weight: 700
+  margin-top: 37px
+.checkbox
+  display: none
+  &:checked ~ .popup-check:before
+    background: #f24c78
+@import "../components/pages/home/style"
+
+@import "media"
+// Всегда в конце
